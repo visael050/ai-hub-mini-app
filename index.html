@@ -1,40 +1,68 @@
 <!doctype html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#07080d">
-<title>AI HUB</title>
-<link rel="icon" href="logo.png">
-<link rel="stylesheet" href="style.css">
-<script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#07080d">
+  <title>AI HUB — Нейросети для твоих целей</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
-<main class="app">
-<header><div class="brand"><img src="logo.png"><div><b>AI HUB</b><small>нейросети для твоих целей</small></div></div><button id="share">↗</button></header>
-<section class="hero">
-<div class="badge">● AI-инструменты в одном месте</div>
-<h1>Работай умнее.<br><span>Создавай быстрее.</span></h1>
-<p>Чаты, изображения, видео, документы и поиск — современные AI-инструменты в одном сервисе.</p>
-<button class="cta" id="heroCta">🚀 Попробовать бесплатно</button>
-<small class="trust">Быстрый старт · Без сложной настройки</small>
-</section>
-<section><h2>Что можно делать</h2><div class="grid">
-<article>💬<b>AI-чаты</b><p>Тексты, идеи, ответы, код и анализ.</p></article>
-<article>🎨<b>Изображения</b><p>Создавай и редактируй визуальный контент.</p></article>
-<article>🎬<b>Видео</b><p>Работа с современным AI-видео.</p></article>
-<article>📄<b>Документы</b><p>Работа с файлами и содержимым.</p></article>
-<article>🔎<b>AI-поиск</b><p>Поиск и обработка информации.</p></article>
-<article>💻<b>Код</b><p>Помощь с программированием.</p></article>
-</div></section>
-<section><h2>Для чего AI?</h2><div class="uses">
-<div>🎓 <b>Учёба</b><small>Объяснения, тексты, презентации</small>›</div>
-<div>💼 <b>Работа</b><small>Письма, документы, аналитика</small>›</div>
-<div>🚀 <b>Бизнес</b><small>Идеи, исследования, контент</small>›</div>
-<div>🎨 <b>Творчество</b><small>Изображения, видео, тексты</small>›</div>
-</div></section>
-<section class="final"><div class="orb">✦</div><h2>Попробуй AI прямо сейчас</h2><p>Открой GoGPT и посмотри возможности сервиса.</p><button class="cta" id="bottomCta">🚀 Открыть GoGPT</button></section>
-<footer>AI HUB<br><small>Независимый информационный Mini App</small></footer>
-</main>
-<script src="app.js?v=3"></script>
-</body></html>
+  <div class="bg-glow glow-1"></div><div class="bg-glow glow-2"></div>
+
+  <main class="app">
+    <header class="topbar">
+      <div class="brand-mini"><span class="brand-dot"></span> AI HUB</div>
+      <button class="share" id="share" aria-label="Поделиться">↗</button>
+    </header>
+
+    <section class="hero">
+      <div class="eyebrow">AI • WORK • STUDY • CREATE</div>
+      <img class="hero-logo" src="logo.png" alt="AI HUB">
+      <h1>Работай умнее.<br><span>Создавай быстрее.</span></h1>
+      <p class="hero-text">Современные AI-инструменты для работы, учёбы, творчества и бизнеса — в одном месте.</p>
+      <button class="primary-cta" id="heroCta"><span>🚀</span> Попробовать бесплатно <b>→</b></button>
+      <div class="trust"><span>✓</span> Быстрый старт <span>•</span> <span>✓</span> Без сложной настройки</div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><div><div class="kicker">ВОЗМОЖНОСТИ</div><h2>Всё необходимое<br>для AI-работы</h2></div></div>
+      <div class="tools-grid">
+        <article class="tool-card featured"><div class="tool-icon">🤖</div><h3>AI-чаты</h3><p>Идеи, тексты, ответы и анализ.</p><span>Попробовать →</span></article>
+        <article class="tool-card"><div class="tool-icon">🎨</div><h3>Изображения</h3><p>Создавай визуалы с помощью AI.</p><span>Создавать →</span></article>
+        <article class="tool-card"><div class="tool-icon">🎬</div><h3>Видео</h3><p>Контент и идеи для видео.</p><span>Создавать →</span></article>
+        <article class="tool-card"><div class="tool-icon">📄</div><h3>Документы</h3><p>Работа с файлами и текстами.</p><span>Анализировать →</span></article>
+        <article class="tool-card"><div class="tool-icon">🔎</div><h3>AI-поиск</h3><p>Быстрее находи и структурируй информацию.</p><span>Искать →</span></article>
+        <article class="tool-card"><div class="tool-icon">💻</div><h3>Код</h3><p>Помощь с программированием и идеями.</p><span>Разрабатывать →</span></article>
+      </div>
+    </section>
+
+    <section class="section use-cases">
+      <div class="kicker">ДЛЯ ТЕБЯ</div><h2>Выбери свою задачу</h2>
+      <div class="case-list">
+        <div class="case"><div class="case-icon">💼</div><div><h3>Работа</h3><p>Тексты, документы, анализ и идеи</p></div><span>→</span></div>
+        <div class="case"><div class="case-icon">🎓</div><div><h3>Учёба</h3><p>Объяснения, конспекты и исследования</p></div><span>→</span></div>
+        <div class="case"><div class="case-icon">🎨</div><div><h3>Творчество</h3><p>Изображения, идеи и контент</p></div><span>→</span></div>
+        <div class="case"><div class="case-icon">🚀</div><div><h3>Бизнес</h3><p>Маркетинг, тексты и аналитика</p></div><span>→</span></div>
+      </div>
+    </section>
+
+    <section class="hub-card">
+      <div class="hub-orbit"><span>AI</span></div>
+      <div class="kicker">ОДИН HUB</div>
+      <h2>Множество возможностей.<br><span>Одна точка входа.</span></h2>
+      <p>Открой AI-инструменты и выбери то, что подходит именно под твою задачу.</p>
+      <button class="secondary-cta" id="midCta">Открыть AI-инструменты →</button>
+    </section>
+
+    <section class="bottom-info">
+      <p>AI HUB — простой старт в мире нейросетей.</p>
+      <button class="text-button" id="shareBottom">↗ Поделиться AI HUB</button>
+    </section>
+  </main>
+
+  <div class="sticky-cta"><button id="bottomCta"><span>🚀</span> Попробовать бесплатно <b>→</b></button></div>
+  <script src="app.js?v=4"></script>
+</body>
+</html>
